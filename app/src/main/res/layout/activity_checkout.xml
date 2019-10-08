@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckoutActivity">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Email address"
+                android:inputType="none|textPersonName" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:id="@+id/txtFnm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="First Name"
+                android:inputType="none|textPersonName" />
+
+            <EditText
+                android:id="@+id/FirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="First Name"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/txtLnm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Last Name" />
+
+            <EditText
+                android:id="@+id/LastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Last Name"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/txtNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mobile Number" />
+
+            <EditText
+                android:id="@+id/Phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Mobile Number"
+                android:inputType="phone" />
+
+            <TextView
+                android:id="@+id/txtNumItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quantity: " />
+
+            <EditText
+                android:id="@+id/txtNoItems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Payment Method" />
+
+            <RadioGroup
+                android:id="@+id/rdGrp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/radioButtonVisa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Visa" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonDebit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Debit" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonCash"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cash" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/buttonConfirm"
+                style="@android:style/Widget.Material.Light.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirm" />
+
+            <Button
+                android:id="@+id/buttonContact"
+                style="@android:style/Widget.Material.Light.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact Us" />
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</android.support.constraint.ConstraintLayout>

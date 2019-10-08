@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactUs">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="78dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/ImgContBG"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imgContactus"
+        android:layout_width="wrap_content"
+        android:layout_height="77dp"
+        app:layout_constraintBottom_toTopOf="@+id/ImgContBG"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ss" />
+
+    <ImageView
+        android:id="@+id/ImgContBG"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="219dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imgContactus"
+        app:layout_constraintTop_toBottomOf="@+id/imgContactus"
+        app:srcCompat="@drawable/phone" />
+
+    <TextView
+        android:id="@+id/TextPhone"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:autoLink="phone"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:inputType="none"
+        android:text="1-800-668-6257"
+        android:textSize="24sp"
+        android:typeface="sans"
+        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/icoPhone"
+        app:layout_constraintTop_toBottomOf="@+id/ImgContBG" />
+
+    <ImageView
+        android:id="@+id/icoPhone"
+        android:layout_width="129dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView6"
+        app:layout_constraintEnd_toStartOf="@+id/TextPhone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImgContBG"
+        app:srcCompat="@android:drawable/stat_sys_phone_call_forward" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="130dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintEnd_toStartOf="@+id/editText2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icoPhone"
+        app:srcCompat="@android:drawable/sym_action_email" />
+
+    <TextView
+        android:id="@+id/editText2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:inputType="none|textMultiLine|textPostalAddress"
+        android:text="533 King St N, Waterloo, Ontario N2L 5Z6"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/icoPhone" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="352dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="22dp"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:srcCompat="@drawable/mapimg" />
+
+
+</android.support.constraint.ConstraintLayout>

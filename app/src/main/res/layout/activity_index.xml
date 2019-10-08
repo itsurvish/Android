@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".IndexActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/jaguarlogo"
+            tools:layout_editor_absoluteX="18dp"
+            tools:layout_editor_absoluteY="4dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:fontFamily="cursive"
+            android:text="Life. It’s not about figures. It’s about feelings. The moments that feed your soul. The occasions that take your breath away. The instances that leave you speechless. These are the moments we live for.   That’s why our designers and engineers at Jaguar develop a blend of responsive performance that gets your pulse racing, dramatic design that makes you stop and stare and a sense of theatre that stirs your emotions.   Our cars are a manifestation of our passion.  Performance that cannot be measured, only felt.  That’s why we call it art."
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+
+        <com.ebanx.swipebtn.SwipeButton
+            android:id="@+id/swipe_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="cursive"
+            android:textStyle="bold"
+            android:typeface="serif"
+            app:button_background="@drawable/shape_button"
+            app:button_bottom_padding="5dp"
+            app:button_image_disabled="@mipmap/ic_launcher"
+            app:button_image_enabled="@mipmap/ic_launcher"
+            app:button_left_padding="5dp"
+            app:button_right_padding="5dp"
+            app:button_top_padding="5dp"
+            app:inner_text="Grace…Space…Pace."
+            app:inner_text_background="@drawable/shape_rounded"
+            app:inner_text_bottom_padding="18dp"
+            app:inner_text_color="@color/colorPrimary"
+            app:inner_text_left_padding="60dp"
+            app:inner_text_size="22dp"
+            app:inner_text_top_padding="18dp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
